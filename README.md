@@ -28,12 +28,12 @@ To annotate the GWAS results and include pathway and disease information
 
 ``` r
 library(VariAnalyser)
-PathwayDiseaseAnnotator("data/example/FHS_EA_MRS_merged.txt")
+PathwayDiseaseAnnotator("FHS_EA_MRS_merged.txt")
 ```
 
 To make a Manhattan plot
 
 ```r
-ManhattanPlotter("data/example/FHS_EA_MRS_merged.txt")
+ManhattanPlotter("FHS_EA_MRS_merged.txt")
 ```
 
