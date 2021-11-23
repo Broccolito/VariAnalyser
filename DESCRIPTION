@@ -1,0 +1,29 @@
+Package: VariAnalyser
+Title: VariAnalyser funtionally annotates variants and genes from GWAS output
+Version: 0.0.0.9000
+Authors@R: 
+    person("Wanjun", "Gu", , "wagu@health.ucsd.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7342-7000"))
+Description: VariAnalyser funtionally annotates variants and genes from GWAS output.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    devtools,
+    ggplot2,
+    dplyr,
+    plotly,
+    ggpubr,
+    htmlwidgets,
+    BioThingsClient.R,
+    rtracklayer,
+    purrr,
+    writexl,
+    latex2exp
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
