@@ -2,6 +2,7 @@
 # VariAnalyser
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of VariAnalyser is to functionally annotate list of variants from 
@@ -11,18 +12,28 @@ associations with genes.
 
 ## Installation
 
-You can install the development version of VariAnalyser like so:
+You can install the most recent version of VariAnalyser like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+if(!require("devtools")){
+    install.packages("devtools")
+    library("devtools")
+}
+install_github("Broccolito/VariAnalyser")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+To annotate the GWAS results and include pathway and disease information
 
 ``` r
 library(VariAnalyser)
+PathwayDiseaseAnnotator("data/example/FHS_EA_MRS_merged.txt")
+```
 
+To make a Manhattan plot
+
+```r
+ManhattanPlotter("data/example/FHS_EA_MRS_merged.txt")
 ```
 
